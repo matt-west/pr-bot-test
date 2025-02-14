@@ -4,5 +4,8 @@
   "private": true,
   "dependencies": {
     "@octokit/rest": "^20.0.0"
+  },
+  "scripts": {
+    "test": "node .github/scripts/test-check-colors.js"
   }
 } 

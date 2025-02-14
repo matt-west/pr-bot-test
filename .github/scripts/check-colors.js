@@ -40,11 +40,12 @@ async function main() {
                    '[Automattic/color-studio](https://github.com/Automattic/color-studio). ' +
                    'If you need a new color, please discuss it with the design team first.';
 
-    // Post comment on PR
-    await octokit.issues.createComment({
+    // Post comment on PR using the pulls API
+    await octokit.pulls.createReview({
       owner,
       repo,
-      issue_number: prNumber,
+      pull_number: prNumber,
+      event: 'COMMENT',
       body: comment
     });
   }
