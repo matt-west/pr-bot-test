@@ -16,9 +16,9 @@ require('module').prototype.require = function(path) {
     return {
       Octokit: class {
         constructor() {}
-        issues = {
-          createComment: async ({ body }) => {
-            console.log('Would post comment to PR:', body);
+        pulls = {
+          createReview: async ({ body }) => {
+            console.log('Would post PR review comment:', body);
           }
         }
       }
