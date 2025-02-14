@@ -5,9 +5,6 @@
   "dependencies": {
     "@octokit/rest": "^20.0.0"
   },
-  "devDependencies": {
-    "jest": "^29.0.0"
-  },
   "scripts": {
     "test": "node .github/scripts/test-check-colors.js"
   }
